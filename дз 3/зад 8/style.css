@@ -1,0 +1,19 @@
+.s1{
+display:inline;
+}
+.s1::after{
+    content:" > " ;
+}
+.s2{
+    display:inline;
+    }
+.link{
+    color: #0b56ea;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.pol{
+    color:#333;
+}

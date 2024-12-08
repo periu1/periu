@@ -1,0 +1,12 @@
+.both{
+    resize: both;
+}
+.none{
+    resize: none;
+}
+.horiz{
+    resize: horizontal;
+}
+.ver{
+    resize: vertical;
+}

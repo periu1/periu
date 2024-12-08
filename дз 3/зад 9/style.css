@@ -1,0 +1,57 @@
+.t2{
+    color:white;
+    background-color: green;
+    padding-left:40px ;
+    padding-right:40px ;
+    width:40px;
+}
+.t2:hover{
+    background-color: grey;
+}
+.tb{
+    border-spacing: 0px;
+    margin-bottom:40px;
+    position: fixed;
+    padding-bottom: 10px;
+    z-index: 10;
+    height: 30px;
+}
+.t3{
+    background-color: green;
+    width:1920px;
+}
+.tb2{
+    text-align: left;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.t4{
+    position:relative;
+    vertical-align:top;
+}
+.table{
+    background-color: green;
+    width:100%;
+}
+.t5{
+ background-color: grey;
+ max-width: 700px;
+ max-height: 400px;
+ display: table-cell;
+ border:solid;
+ border-width: 5px;
+ border-color:green;
+ text-align:center;
+}
+.p{
+    text-align: center;
+    color:white;
+}
+.l{
+    border:solid;
+    border-color:grey;
+}
+.t6{
+    text-align:center;
+    color:white;
+}

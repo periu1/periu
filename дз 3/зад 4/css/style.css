@@ -1,0 +1,27 @@
+.header{
+    border:solid;
+    border-color:blue;
+    padding: 5px;
+    padding-top: 40px;
+}
+.sidebar{
+    text-align: center;
+    background-color: cyan;
+    position: fixed;
+    height: 30px;
+    width: 1320px;
+    margin-bottom:30px ;
+    top: 20px;
+    bottom: 300px;
+
+}
+.content{
+    border: solid;
+    border-color:cadetblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    top: 400px;
+    bottom: 400px;
+}

@@ -1,0 +1,33 @@
+.header
+{
+    border:double;
+    width: 1300px;
+    height:200px ;
+    border-width: 1px;
+}
+.sidebar
+{
+    border:solid;
+    width: 200px;
+    height:500px ;
+    border-width: 1px;
+    display: inline-block;
+}
+.content{
+    border:solid;
+    width: 1098px;
+    height:500px ;
+    border-width: 1px;
+    display: inline-block;
+}
+.footer {
+    border:double;
+    width: 1300px;
+    height:200px ;
+    border-width: 1px;
+}
+.body{
+    border:solid;
+    border-color:blue;
+    padding:5px;
+}

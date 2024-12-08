@@ -1,0 +1,17 @@
+.go, button{
+    margin: 8.5px;
+    height: 30px;
+    width: 200px;
+}
+.header{
+    border:solid;
+    border-color:blue;
+    height: 320px;
+    width:230px;
+}
+.button{
+    background-color: #1cbc11;
+}
+.button:hover{
+    background-color:#14a20a;
+}

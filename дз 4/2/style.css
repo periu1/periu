@@ -1,0 +1,16 @@
+.both{
+    cursor: crosshair;
+    resize: none;
+}
+.none{
+    cursor: pointer;
+    resize: none;
+}
+.horiz{
+cursor:wait;
+resize: none;
+}
+.ver{
+    cursor: url(superman.png),pointer;
+    resize: none;
+}
