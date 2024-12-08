@@ -1,0 +1,23 @@
+.both{
+    resize: both;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: blue;
+}
+.none{
+    resize: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.horiz{
+    resize: horizontal;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: green;
+}
+.ver{
+    resize: vertical;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+}

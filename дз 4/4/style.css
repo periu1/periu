@@ -1,0 +1,8 @@
+.both{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.none{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

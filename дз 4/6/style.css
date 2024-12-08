@@ -1,0 +1,17 @@
+.body{
+    text-shadow: black 0 6px;
+}
+.b2{
+    text-shadow: black 0 6px 3px;
+}
+.b3{
+    text-shadow: blue 0 6px,red 0 -6px;
+}
+.b4{
+    color: #f0f0f0; 
+    text-shadow: #fff -1px -1px 0,#333 1px 1px 0;
+}
+.b5{
+    color: black; 
+    text-shadow: black -1px -1px 0;
+}

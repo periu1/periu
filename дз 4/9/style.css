@@ -1,0 +1,25 @@
+.b2{
+    filter: grayscale(100%);
+}
+.b3{
+    filter: sepia(100%);
+}
+.b4{
+    filter: saturate(30%);
+}
+.b5{
+    filter: hue-rotate(90deg);
+}.b6{
+    filter: invert(100%);
+}
+.b7{
+    filter: contrast(50%);
+}.b8{
+
+}
+.b9{
+
+}
+.n{
+    display: inline;
+}
