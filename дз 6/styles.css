@@ -1,0 +1,98 @@
+main{
+    width: 800px;
+    height: 600px;
+    background-image: url(bg.jpg);
+}
+.asteroid{
+    position: relative;
+    z-index: 5;
+    width: 70px;
+    height: 60px;
+
+}
+.superman{
+    position: relative;
+    left: 300px;
+    bottom: 246px;
+}
+.planet-3{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: -160px;
+    right: -110px;
+    z-index: 4;
+}
+.ufo{
+    position: relative;
+    z-index: 5;
+    width: 80px;
+    height: 60px;
+}
+.planet-2{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    top: 5px;
+    left: -110px;
+    z-index: 2;
+}
+.planet-1{
+    position: relative;
+    top: 80px;
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+}
+.spaceship{
+    position: relative; 
+    z-index: 5;
+    width: 70px;
+    height: 60px;
+}
+button {
+    margin: 0;
+    padding: 1.1rem 2rem;
+    border-radius: 2rem;
+    outline: 2px solid black; /* Добавлено для обводки */
+    background-color: rgb(255, 165, 180);
+    color: rgb(90, 59, 165);
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 10px 10px; /* Добавлено для тени */
+    transition: all 0.1s ease-out; /* Плавный переход быстрый в начале и резкий в конце*/
+    position: relative;
+    left: 80px;
+    z-index: 5;
+    bottom: 530px;
+}
+
+button:active {
+    box-shadow: none; /* Убираем тень при нажатии */
+    transform: translate(10px, 10px); /* Перемещаем кнопку при нажатии */
+}
+main {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+}  
+
+/* Стиль для изображений */  
+ul li img {  
+    /* Можно изменить размер изображений */  
+    margin: 0px;  
+    transition: transform 0.5s ease; /* Плавный переход для анимации */  
+}  
+
+ul {  
+    display: flex; /* Чтобы элементы были в одном ряду */  
+    list-style: none;  
+    padding: 0;  
+    bottom: 450px;
+    right: 110px;
+    position: relative;
+}  
+
+li {  
+    margin: 0 5px; /* Отступ для каждого элемента списка */  
+}  

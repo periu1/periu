@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+
+<body>
+    <input type="text" id="textField">
+    <input disabled id="textResult" style="background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0)"></input>
+
+<script>
+    var inputTextField = document.getElementById('textField');
+    var outputTextField = document.getElementById('textResult');
+
+    inputTextField.oninput = function() {
+        outputTextField.value = inputTextField.value;
+    };
+</script>
+
+</body>
+</html>

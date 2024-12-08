@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+    textarea{
+      resize: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <textarea class="pr1"></textarea> + <textarea class="pr2"></textarea>=<textarea class="sum"></textarea>
+  <button onclick="fun()">равно</button>
+  <script>
+    let fun=function(){
+    let num1=window.document.querySelectorAll('.pr1');
+    let num2=window.document.querySelectorAll('.pr2');
+    let sum=window.document.querySelectorAll('.sum');
+    for(let i=0;i<num1.length;i++){
+      let sum1=(Number(num1[i].value)+Number(num2[i].value))
+      sum[i].innerHTML=sum1;
+    }}
+
+  </script>
+</body>
+</html>

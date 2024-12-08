@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Carousel of Images</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <main>  
+        <img src="planet-1.png" alt="planet-1" class="planet-1">  
+        <img src="planet-2.png" alt="planet-2" class="planet-2">  
+        <img src="planet-3.png" alt="planet-3" class="planet-3">  
+        <ul>  
+            <li class="active"><img src="asteroid.png" alt="asteroid" class="asteroid"></li>  
+            <li><img src="spaceship.png" alt="spaceship" class="spaceship"></li>  
+            <li><img src="ufo.png" alt="ufo" class="ufo"></li>  
+        </ul>  
+        <img src="superman.png" alt="superman" class="superman">  
+        <button id="startCarousel">Полетели</button>  
+    </main>  
+    <script>  
+        const images = [  
+            'asteroid.png',  
+            'spaceship.png',  
+            'ufo.png'  
+        ];  
+        
+        let currentIndex = 0;  
+        let intervalId;  
+
+        const imageElements = document.querySelectorAll('ul li img');  
+        const buttonElement = document.getElementById('startCarousel');  
+
+        const changeImages = () => {  
+            // Меняем порядок изображений в круге  
+            currentIndex = (currentIndex + 1) % images.length;  
+
+            // Показать текущее изображение как "активное"  
+            imageElements.forEach((img, index) => {  //(index + currentIndex) % images.length позволяет нам правильно циклически менять изображения.
+                img.src = images[(index + currentIndex) % images.length]; //Внутри функции мы обновляем currentIndex, увеличивая его на 1 и используя оператор % (остаток от деления) для того, чтобы вернуться к 0, когда индекс достигает длины массива images. Это позволяет циклически проходить по массиву. 
+            });  
+        };  
+
+        buttonElement.addEventListener('click', () => {  //Здесь мы добавляем обработчик событий для кнопки. Когда кнопка нажата, срабатывает функция, которая проверяет, запущен ли интервал (т.е. intervalId не равен null).
+            if (intervalId) {  
+                clearInterval(intervalId);  //Если интервал запущен, мы его останавливаем с помощью clearInterval(intervalId), обнуляем intervalId и меняем текст кнопки на "Полетели".
+                intervalId = null;  
+                buttonElement.textContent = 'Полетели'; // Изменить текст кнопки  
+            } else {  //Если интервал не запущен, мы сначала вызываем changeImages, чтобы сменить изображения сразу, затем запускаем интервал с помощью setInterval, который будет вызывать changeImages каждые 1000 миллисекунд (1 секунда). Текст кнопки меняется на "Остановить".
+                changeImages(); // Сменить изображения сразу при запуске  
+                intervalId = setInterval(changeImages, 1000); // Меняем изображения каждые 1000 мс (1 секунда)  
+                buttonElement.textContent = 'Остановить'; // Изменить текст кнопки  
+            }  
+        });  
+    </script>  
+</body>  
+</html>

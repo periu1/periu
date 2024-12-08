@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление сообщений</title>
+    <style>
+        .message {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            position: relative;
+            overflow-wrap: break-word;
+            background-color: orange;
+            text-align: left;
+            width: 200px;
+            justify-content: center;
+        }
+        .delete-btn {
+            cursor: pointer;
+            color: red;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message-list">
+        <div class="message">
+            <div>Сфинкс</div>
+            <div>Сообщение </div>
+            <span class="delete-btn">[x]</span>
+        </div>
+        <div class="message">
+            <div>Девое-рекс</div>
+            <div>Сообщение</div>
+            <span class="delete-btn">[x]</span>
+        </div>
+        <div class="message">
+            <div>Корниш-рекс</div>
+            <div>Сообщение</div>
+            <span class="delete-btn">[x]</span>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('message-list').addEventListener('click', function(e) {
+            if (e.target.classList.contains('delete-btn')) {
+                const message = e.target.closest('.message');
+                message.remove();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
